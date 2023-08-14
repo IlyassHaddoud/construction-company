@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body.active {
+  overflow: hidden;
+}
+
+.container {
+  max-width: 82rem;
+  margin: 0 auto;
+  padding-block: 5rem;
+}
+
+/* Nav-Bar */
+.header {
+  background-color: #263640;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  min-height: 8vh;
+}
+
+.header .logo {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header .logo .brand {
+  font-weight: bold;
+}
+
+.header .nav-link {
+  flex: 2;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  transition: transform 0.5s ease-in;
+}
+
+.header .nav-link.active {
+  transform: translateX(0%);
+}
+
+.header .nav-link li {
+  cursor: pointer;
+}
+
+.header .btn {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header .btn button {
+  background-color: #7591a3;
+  color: #ffffff;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  min-width: 8rem;
+  cursor: pointer;
+}
+
+.burger {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  display: none;
+}
+
+.burger.active {
+  .line:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+  }
+
+  .line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .line:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+  }
+}
+
+.burger .line {
+  width: 30px;
+  height: 4px;
+  background-color: #ffffff;
+  transition: transform 0.2s ease-in;
+}
+
+/* Hero */
+
+.hero {
+  background-color: red;
+}
+
+@media screen and (max-width: 768px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  .burger {
+    display: flex;
+    margin-left: 20px;
+  }
+
+  .header .nav-link {
+    padding-block: 7rem;
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    top: 8vh;
+    right: 0px;
+    transform: translateX(100%);
+    width: 100%;
+    height: 92vh;
+    background-color: #263640;
+  }
+}
