@@ -1,9 +1,9 @@
 import { useState } from "react";
-import client1 from "../assets/Reviews/client1.png";
-import client2 from "../assets/Reviews/client2.png";
-import client3 from "../assets/Reviews/client3.png";
-import client4 from "../assets/Reviews/client4.png";
-import client5 from "../assets/Reviews/client5.png";
+import client1 from "../assets/reviews/client1.png";
+import client2 from "../assets/reviews/client2.png";
+import client3 from "../assets/reviews/client3.png";
+import client4 from "../assets/reviews/client4.png";
+import client5 from "../assets/reviews/client5.png";
 
 const Reviews = () => {
   const [clients, setClients] = useState([
