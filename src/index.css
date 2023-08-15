@@ -269,7 +269,7 @@ a {
 /* Help Section */
 
 .help {
-  padding: 2rem 4rem;
+  padding: 6rem 4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -280,17 +280,18 @@ a {
 /* Review */
 
 .reviews {
+  margin-bottom: 6rem;
   padding: 4rem 4rem;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
   align-items: center;
   background-color: #e6f0f4;
   color: #263640;
 }
 
 .reviews .comment {
-  width: 60%;
+  width: 70%;
   background-color: white;
   border-radius: 5px;
   padding: 12px;
@@ -298,8 +299,9 @@ a {
 
 .reviews .clients {
   display: flex;
-  width: 100%;
+  width: 70%;
   justify-content: space-between;
+  /* background-color: red; */
 }
 
 .reviews .clients .client {
@@ -310,6 +312,91 @@ a {
 
 .reviews .clients .client .info {
   display: none;
+  line-height: 2px;
+}
+
+/* Cta */
+
+.cta {
+  padding: 3rem 4rem;
+  background-color: #b3becd;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: #263640;
+}
+
+.cta .content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cta .content .inputs {
+  display: flex;
+}
+.cta .content .inputs input {
+  color: #263640;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  padding: 10px;
+  min-width: 13rem;
+}
+
+.cta .content .inputs button {
+  background-color: #263640;
+  color: #ffffff;
+  outline: none;
+  border: none;
+  padding: 10px;
+  min-width: 8rem;
+  cursor: pointer;
+}
+
+/* Footer */
+
+.footer {
+  margin-top: 6rem;
+  background-color: #263640;
+  padding: 2rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer .right {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.footer .left {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.footer .left .brand {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+}
+.footer .left .brand p {
+  color: white;
+}
+
+.footer .left .links {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+}
+.footer .left .links p {
+  color: white;
 }
 
 @media screen and (max-width: 768px) {
@@ -389,6 +476,61 @@ a {
 
   .help {
     text-align: center;
+  }
+
+  /* Review */
+
+  .reviews .comment {
+    width: 90%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 12px;
+  }
+
+  .reviews .clients {
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+  }
+
+  .reviews .clients .client {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .reviews .clients .client .info {
+    display: none;
+    line-height: 2px;
+  }
+
+  /* Cta */
+
+  .cta {
+    text-align: center;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  /* Footer */
+
+  .footer {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .footer .left {
+    text-align: center;
+    align-items: center;
+  }
+
+  .footer .right {
+    text-align: center;
+    align-items: center;
   }
 }
 

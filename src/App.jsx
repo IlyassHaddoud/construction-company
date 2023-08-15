@@ -1,5 +1,7 @@
 import Achivements from "./Components/Achievements";
 import Articles from "./Components/Articles";
+import Cta from "./Components/Cta";
+import Footer from "./Components/Footer";
 import Header from "./Components/Header";
 import Help from "./Components/Help";
 import Hero from "./Components/Hero";
@@ -16,6 +18,8 @@ const App = () => {
       <Articles />
       <Help />
       <Reviews />
+      <Cta />
+      <Footer />
     </div>
   );
 };
